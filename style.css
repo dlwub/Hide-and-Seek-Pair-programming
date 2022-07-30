@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-btn {
+  width: 90%;
+  margin: 1em 1em 4em 1em;
+}
+
+.name-input-container {
+  position: relative;
+}
+
+.name-input,
+.email-input,
+.message-input {
+  margin: 0.25em 1em;
+  border-radius: 4px;
+  padding-left: 2.25em;
+  width: 85%;
+}
+
+.name-input {
+  padding-top: 0;
+  border: 1px solid #dfdfe0;
+  height: 3.25em;
+  position: relative;
+}
+
+.name-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.3125em;
+  color: #1a2236;
+  position: absolute;
+  top: 1em;
+  left: 3em;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.625em;
+  line-height: 0.9375em;
+  color: #7d7c84;
+}
+
+.email-input {
+  border: 1px solid #dfdfe0;
+  height: 3.25em;
+}
+
+.message-input {
+  border: 1px solid #dfdfe0;
+  height: 7em;
+}
+
+.name-input:focus::placeholder,
+.email-input:focus::placeholder,
+.message-input:focus::placeholder {
+  opacity: 0;
+  border: 1px solid #1a2236;
+}
+
